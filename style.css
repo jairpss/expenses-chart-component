@@ -34,10 +34,12 @@ main{
     flex-direction: column;
 }
 
+/*HEADER*/
+
 .head{
    
     background-color: var(--soft-red);
-    width: 25vw;
+    width: 30vw;
     height: 80px;
     border-radius:16px;
     margin-top: 100px;
@@ -64,10 +66,13 @@ main{
     height: 32px;
 }
 
+
+/*MAIN CONTAINER*/
+
 .container{
     background-color: var(--very-pale-orange);
-    width: 25vw;
-    height: 350px;
+    width: 30vw;
+    height: 400px;
     border-radius:16px;
     padding: 16px 24px;
     display: flex;
@@ -75,10 +80,44 @@ main{
     justify-content: space-between;
 }
 
+/*MAIN TITLE*/
+
 .title h2{
     color: var(--dark-brown);
     font-size: 22px;
 }
+
+/*BARS*/
+
+.bars{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--cream);
+}
+
+.day{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 18px;
+}
+
+.bar{
+    width: 45px;
+    height: 140px;
+    border-radius: 5px;
+    background-color: var(--soft-red);
+}
+
+.day p{
+    font-size: 12px;   
+    color: var(--medium-brown);
+    font-weight: bold;
+    text-align: center;
+}
+
+/*TOTAL*/
 
 .total{
     display: flex;
