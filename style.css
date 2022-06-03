@@ -39,7 +39,7 @@ main{
 .head{
    
     background-color: var(--soft-red);
-    width: 30vw;
+    width: 480px;
     height: 80px;
     border-radius:16px;
     margin-top: 100px;
@@ -71,7 +71,7 @@ main{
 
 .container{
     background-color: var(--very-pale-orange);
-    width: 30vw;
+    width: 480px;
     height: 400px;
     border-radius:16px;
     padding: 16px 24px;
