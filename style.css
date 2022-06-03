@@ -89,10 +89,11 @@ main{
 
 /*BARS*/
 
-.bars{
+.charts{
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid var(--cream);
+    align-items: flex-end;
+    border-bottom: 3px solid var(--cream);
 }
 
 .day{
@@ -108,13 +109,100 @@ main{
     height: 140px;
     border-radius: 5px;
     background-color: var(--soft-red);
+    position: relative;
+    display: inline-block;
 }
+
+.active{
+    background-color: var(--cyan);
+}
+
+.mon{
+    height: 45px;
+}
+
+.tue{
+    height: 90px;
+}
+
+.thu{
+    height: 80px;
+}
+
+.fri{
+    height: 60px;
+}
+
+.sat{
+    height: 110px;
+}
+
+.sun{
+    height: 65px;
+}
+
+.bar:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+/*  Tooltips */ 
+
+.tooltip {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: var(--dark-brown);
+    color: var(--very-pale-orange);
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    /* left: 50%;
+    margin-left: -60px; */
+    margin-bottom: 5px;
+}
+
+.mon:hover .tooltip {
+    visibility: visible;
+}
+
+.tue:hover .tooltip {
+    visibility: visible;
+}
+
+.wed:hover .tooltip {
+    visibility: visible;
+}
+
+.thu:hover .tooltip {
+    visibility: visible;
+}
+
+.fri:hover .tooltip {
+    visibility: visible;
+}
+
+.sat:hover .tooltip {
+    visibility: visible;
+}
+
+.sun:hover .tooltip {
+    visibility: visible;
+}
+
 
 .day p{
     font-size: 12px;   
     color: var(--medium-brown);
     font-weight: bold;
     text-align: center;
+    margin-top: 4px;
 }
 
 /*TOTAL*/
